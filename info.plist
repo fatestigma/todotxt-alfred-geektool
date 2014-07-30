@@ -78,7 +78,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>0E9D771C-094D-4EEC-9C62-824E3470771A</string>
+				<string>A6B13A3B-EA09-4D2F-888E-B11EE4363AEF</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -602,6 +602,27 @@ echo ''</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>./todo.sh projectview "{query}" &gt; /tmp/display.txt
+
+osascript -e 'tell application "GeekTool Helper"
+		refresh shell geeklet "display"
+	end tell'</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.script</string>
+			<key>uid</key>
+			<string>A6B13A3B-EA09-4D2F-888E-B11EE4363AEF</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -861,6 +882,11 @@ end tell</string>
 		<dict>
 			<key>ypos</key>
 			<real>470</real>
+		</dict>
+		<key>A6B13A3B-EA09-4D2F-888E-B11EE4363AEF</key>
+		<dict>
+			<key>ypos</key>
+			<real>570</real>
 		</dict>
 		<key>AF4D1343-958B-4F98-803B-15364D98B1F9</key>
 		<dict>
