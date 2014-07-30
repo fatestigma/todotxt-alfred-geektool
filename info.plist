@@ -8,6 +8,17 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
+		<key>0A7BAD97-CA45-4F65-8271-154593224383</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0E9D771C-094D-4EEC-9C62-824E3470771A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>0F851203-1D83-4539-98C5-0C5C6EDE909F</key>
 		<array>
 			<dict>
@@ -30,11 +41,33 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>19D810E9-46EE-4823-89F9-6758A65D8517</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F1B49AF3-BE4D-4856-9296-ACF096573A11</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>3FCAD5EF-E91B-4F89-8E44-7C7099517966</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>0E9D771C-094D-4EEC-9C62-824E3470771A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>4460E7BB-55A9-46E0-9235-F778A6B48A52</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0A7BAD97-CA45-4F65-8271-154593224383</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -96,6 +129,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>B74E9D94-1116-4290-B7EB-2CFEE2FC25B0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0A7BAD97-CA45-4F65-8271-154593224383</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>B91B3E88-6CFB-4772-B824-7213C675BC1B</key>
 		<array>
 			<dict>
@@ -140,6 +184,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>F1B49AF3-BE4D-4856-9296-ACF096573A11</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7357D5A3-A3F7-43DD-9900-F7A3CA237CE7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>F2DC8DA1-0861-4BBE-8285-F8620FCC77A7</key>
 		<array>
 			<dict>
@@ -151,11 +206,33 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>F40E758B-C330-4690-879C-D78CF6F959C7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B74E9D94-1116-4290-B7EB-2CFEE2FC25B0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>F9C7A5B7-50E2-425D-A002-9D16E258ADFF</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>0F851203-1D83-4539-98C5-0C5C6EDE909F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>FEC3EA10-65D0-405E-AEBB-8202ADF62433</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4460E7BB-55A9-46E0-9235-F778A6B48A52</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -176,6 +253,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>./todo.sh -P ls "{query}" &gt; /tmp/display.txt
+
+osascript -e 'tell application "GeekTool Helper"
+		refresh shell geeklet "display"
+	end tell'</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.script</string>
+			<key>uid</key>
+			<string>0E9D771C-094D-4EEC-9C62-824E3470771A</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>keyword</key>
@@ -193,33 +291,6 @@
 			<string>AF4D1343-958B-4F98-803B-15364D98B1F9</string>
 			<key>version</key>
 			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>hotkey</key>
-				<integer>0</integer>
-				<key>hotmod</key>
-				<integer>0</integer>
-				<key>hotstring</key>
-				<string></string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>6125CE54-D132-43CC-BDE1-96B7959F1F1B</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -263,7 +334,7 @@ echo ''</string>
 			<key>type</key>
 			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>12820F54-3EBD-44FE-A631-C84F1A0CE686</string>
+			<string>6125CE54-D132-43CC-BDE1-96B7959F1F1B</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -309,6 +380,33 @@ echo ''</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>12820F54-3EBD-44FE-A631-C84F1A0CE686</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
@@ -342,27 +440,6 @@ echo ''</string>
 			<string>alfred.workflow.input.keyword</string>
 			<key>uid</key>
 			<string>F9C7A5B7-50E2-425D-A002-9D16E258ADFF</string>
-			<key>version</key>
-			<integer>0</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>./todo.sh -P ls "{query}" &gt; /tmp/display.txt
-
-osascript -e 'tell application "GeekTool Helper"
-		refresh shell geeklet "display"
-	end tell'</string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.script</string>
-			<key>uid</key>
-			<string>0E9D771C-094D-4EEC-9C62-824E3470771A</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -417,33 +494,6 @@ osascript -e 'tell application "GeekTool Helper"
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>hotkey</key>
-				<integer>0</integer>
-				<key>hotmod</key>
-				<integer>0</integer>
-				<key>hotstring</key>
-				<string></string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>F2DC8DA1-0861-4BBE-8285-F8620FCC77A7</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
@@ -467,6 +517,33 @@ osascript -e 'tell application "GeekTool Helper"
 			<string>8B634DB3-6AB7-49CB-8B2F-5479DAAB6869</string>
 			<key>version</key>
 			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>F2DC8DA1-0861-4BBE-8285-F8620FCC77A7</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -522,15 +599,218 @@ osascript -e 'tell application "GeekTool Helper"
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>F40E758B-C330-4690-879C-D78CF6F959C7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>python prioritize.py "{query}" e</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>0A7BAD97-CA45-4F65-8271-154593224383</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>topri</string>
+				<key>script</key>
+				<string>python prioritize.py "{query}" p</string>
+				<key>title</key>
+				<string>Prioritize</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>B74E9D94-1116-4290-B7EB-2CFEE2FC25B0</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>FEC3EA10-65D0-405E-AEBB-8202ADF62433</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>todpri</string>
+				<key>script</key>
+				<string>python prioritize.py "{query}" d</string>
+				<key>title</key>
+				<string>Deprioritize</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>4460E7BB-55A9-46E0-9235-F778A6B48A52</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>
+tell application "System Events"
+	tell property list file ((do shell script "pwd") &amp; "/" &amp; "info.plist")
+		set _bundle to value of property list item "bundleid" as text
+	end tell
+end tell
+
+set _path to (do shell script "printf $HOME") &amp; "/Library/Application Support/Alfred 2/Workflow Data/" &amp; ( _bundle) &amp; "/todo.txt"
+
+set _todo to POSIX file _path as string
+tell application "Finder"
+	if exists file _todo then
+		open file _todo
+	end if
+end tell</string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7357D5A3-A3F7-43DD-9900-F7A3CA237CE7</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>hotstring</key>
+				<string></string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>19D810E9-46EE-4823-89F9-6758A65D8517</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>toedit</string>
+				<key>text</key>
+				<string>Edit todo.txt in a TextEditor</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>F1B49AF3-BE4D-4856-9296-ACF096573A11</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>0A7BAD97-CA45-4F65-8271-154593224383</key>
+		<dict>
+			<key>ypos</key>
+			<real>670</real>
+		</dict>
 		<key>0E9D771C-094D-4EEC-9C62-824E3470771A</key>
 		<dict>
 			<key>ypos</key>
-			<real>240</real>
+			<real>10</real>
 		</dict>
 		<key>0F851203-1D83-4539-98C5-0C5C6EDE909F</key>
 		<dict>
@@ -542,10 +822,20 @@ osascript -e 'tell application "GeekTool Helper"
 			<key>ypos</key>
 			<real>110</real>
 		</dict>
+		<key>19D810E9-46EE-4823-89F9-6758A65D8517</key>
+		<dict>
+			<key>ypos</key>
+			<real>870</real>
+		</dict>
 		<key>3FCAD5EF-E91B-4F89-8E44-7C7099517966</key>
 		<dict>
 			<key>ypos</key>
 			<real>110</real>
+		</dict>
+		<key>4460E7BB-55A9-46E0-9235-F778A6B48A52</key>
+		<dict>
+			<key>ypos</key>
+			<real>770</real>
 		</dict>
 		<key>54C545E9-CBB8-428B-A4D6-CCE96501C935</key>
 		<dict>
@@ -562,6 +852,11 @@ osascript -e 'tell application "GeekTool Helper"
 			<key>ypos</key>
 			<real>10</real>
 		</dict>
+		<key>7357D5A3-A3F7-43DD-9900-F7A3CA237CE7</key>
+		<dict>
+			<key>ypos</key>
+			<real>870</real>
+		</dict>
 		<key>8B634DB3-6AB7-49CB-8B2F-5479DAAB6869</key>
 		<dict>
 			<key>ypos</key>
@@ -571,6 +866,11 @@ osascript -e 'tell application "GeekTool Helper"
 		<dict>
 			<key>ypos</key>
 			<real>10</real>
+		</dict>
+		<key>B74E9D94-1116-4290-B7EB-2CFEE2FC25B0</key>
+		<dict>
+			<key>ypos</key>
+			<real>670</real>
 		</dict>
 		<key>B91B3E88-6CFB-4772-B824-7213C675BC1B</key>
 		<dict>
@@ -592,15 +892,30 @@ osascript -e 'tell application "GeekTool Helper"
 			<key>ypos</key>
 			<real>570</real>
 		</dict>
+		<key>F1B49AF3-BE4D-4856-9296-ACF096573A11</key>
+		<dict>
+			<key>ypos</key>
+			<real>870</real>
+		</dict>
 		<key>F2DC8DA1-0861-4BBE-8285-F8620FCC77A7</key>
 		<dict>
 			<key>ypos</key>
 			<real>470</real>
 		</dict>
+		<key>F40E758B-C330-4690-879C-D78CF6F959C7</key>
+		<dict>
+			<key>ypos</key>
+			<real>670</real>
+		</dict>
 		<key>F9C7A5B7-50E2-425D-A002-9D16E258ADFF</key>
 		<dict>
 			<key>ypos</key>
 			<real>210</real>
+		</dict>
+		<key>FEC3EA10-65D0-405E-AEBB-8202ADF62433</key>
+		<dict>
+			<key>ypos</key>
+			<real>770</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
