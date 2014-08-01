@@ -5,7 +5,7 @@ import alfred
 
 def results(arg, com):
     uid = 0
-    tasks = os.popen('./todo.sh ls' + com + ' ' + arg).read().splitlines()
+    tasks = os.popen('todo/todo.sh ls' + com + ' ' + arg).read().splitlines()
     if com == 'prj':
         uid += 1
         yield alfred.Item({'uid': alfred.uid(uid), 'arg': ''}, 'ALL Projects', 'Enter to display all ...', 'EBD226C2-1E22-4F65-BD43-556E6EF3C463.png')

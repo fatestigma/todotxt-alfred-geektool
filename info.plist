@@ -283,7 +283,7 @@
 				<integer>0</integer>
 				<key>script</key>
 				<string>task_to_add=`echo '{query}' | sed s/'('/'\\('/ | sed s/')'/'\\)'/`
-./todo.sh add $task_to_add
+todo/todo.sh add $task_to_add
 echo ''</string>
 				<key>type</key>
 				<integer>0</integer>
@@ -349,7 +349,7 @@ echo ''</string>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string>./todo.sh -f -n do {query}
+				<string>todo/todo.sh -f -n do {query}
 echo ''</string>
 				<key>type</key>
 				<integer>0</integer>
@@ -394,7 +394,7 @@ echo ''</string>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string>./todo.sh -f -n del {query}
+				<string>todo/todo.sh -f -n del {query}
 echo ''</string>
 				<key>type</key>
 				<integer>0</integer>
@@ -481,7 +481,7 @@ echo ''</string>
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string>./todo.sh -P ls "{query}" &gt; /tmp/display.txt
+				<string>todo/todo.sh -P ls "{query}" &gt; /tmp/display.txt
 
 osascript -e 'tell application "GeekTool Helper"
 		refresh shell geeklet "display"
@@ -610,7 +610,7 @@ osascript -e 'tell application "GeekTool Helper"
 				<key>escaping</key>
 				<integer>0</integer>
 				<key>script</key>
-				<string>./todo.sh -P projectview "{query}" &gt; /tmp/display.txt
+				<string>todo/todo.sh -P projectview "{query}" &gt; /tmp/display.txt
 
 osascript -e 'tell application "GeekTool Helper"
 		refresh shell geeklet "display"
